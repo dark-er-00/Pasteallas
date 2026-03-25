@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PlayfairDisplay', serif;
+}
+
+header {
+    padding: 20px;
+    border-bottom: 1px solid #c37960;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p {
+    font-size: 25px;
+    color: #894e3f;
+    padding-left: 30px;
+    font-family: 'Cassandra', sans-serif;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: 	#c37960;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#hero-section {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    gap: 10px;
+    background-image: url('../images/background-main.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero-section button {
+    width: 150px;
+    margin-left: 75px;
+    border-radius: 30px;
+    border: 1px solid 	#c37960;
+    background-color: #f0d7a7;
+    color: #894e3f;
+    font-weight: bold;
+    padding: 15px 30px;
+    transition: 0.3s;
+}
+
+#hero-section button:hover {
+    background-color: #c37960;
+    color: #eee1ba;
+}
+
+#deals {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    background-color: #eee1ba;
+    background-image: url('../images/background-boba.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#deals h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.flip-card {
+    background: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.flip-card-front {
+    background-color: #f0d7a7;
+    color: #894e3f;
+}
+
+.flip-card-back {
+    background-color: #c37960;
+    color: #eee1ba;
+    transform: rotateY(180deg);
+}
+
+#contact {
+    padding: 80px 20px;
+    background-color: #f0d7a7;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #894e3f;
+}
+
+#contact p {
+    margin-bottom: 40px;
+    color: #9c634f;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 14px 10px;
+    border: 2px solid #c37960;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    color: #894e3f;
+}
+
+.input-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.input-group label {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    color: #9c634f;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s ease;
+    padding: 0 5px;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+    top: -8px;
+    left: 10px;
+    font-size: 12px;
+    color: #894e3f;
+    background: #eee1ba;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #894e3f;
+}
+
+#contact button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #c37960;
+    color: #eee1ba;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact button:hover {
+    background: #894e3f;
+}
+
+#about-us {
+    background-color: #eee1ba;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+#about-us h2 {
+    color: #894e3f;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#about-us h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #c37960;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+#about-us p {
+    color: #9c634f;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#about-us:hover {
+    background-color: #f0d7a7;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: #894e3f;
+    color: #eee1ba;         
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 14px;
+    font-family: 'Cassandra', sans-serif;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    header {
+        padding: 18px 40px;
+    }
+
+    header p {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+
+    header nav {
+        gap: 25px;
+        padding-right: 20px;
+    }
+
+    #hero-section {
+        padding-left: 60px;
+        gap: 8px;
+    }
+
+    #hero-section button {
+        margin-left: 50px;
+        padding: 12px 25px;
+        width: 140px;
+    }
+
+    #deals {
+        padding: 40px 20px;
+        gap: 18px;
+    }
+
+    .flip-card {
+        width: 180px;
+        height: 180px;
+    }
+
+    #contact {
+        padding: 70px 20px;
+    }
+
+    #contact h2 {
+        font-size: 2.2rem;
+    }
+
+    #contact p {
+        font-size: 1rem;
+    }
+
+    #about-us {
+        padding: 50px 15px;
+    }
+
+    #about-us h2 {
+        font-size: 2.2rem;
+    }
+
+    #about-us p {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 20px 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    header p {
+        font-size: 20px;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding-right: 0;
+    }
+
+    #hero-section {
+        padding-left: 20px;
+        gap: 6px;
+        height: 70vh;
+        align-items: center;
+    }
+
+    #hero-section button {
+        margin-left: 0;
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    #deals {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 15px;
+        gap: 15px;
+    }
+
+    .flip-card {
+        width: 80%;
+        height: 150px;
+    }
+
+    #contact {
+        padding: 60px 15px;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #contact p {
+        font-size: 0.95rem;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    .input-group label {
+        font-size: 12px;
+    }
+
+    #contact button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #about-us {
+        padding: 40px 10px;
+        width: 100%;
+    }
+
+    #about-us h2 {
+        font-size: 2rem;
+    }
+
+    #about-us p {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        padding: 20px 10px;
+        font-size: 12px;
+    }
+}
