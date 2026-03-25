@@ -96,7 +96,124 @@ riceMeals.addEventListener("click", function() {
 });
 
 comboMeals.addEventListener("click", function() {
-    menuItems.innerHTML = `<div class="item">McChicken</div>`;
+    menuItems.innerHTML = 
+            `<p>Any Pasta with Drinks</p>
+            <div class="item">
+                <img src="" alt="">
+                <h3>16oz Drinks (Milktea, Coffee, Lemonade)</h3>
+                <p>₱150.00</p>
+                <button class="add-to-cart" data-name="16oz Drinks (Milktea, Coffee, Lemonade)" data-price="150">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Upsize to 22oz</h3>
+                <p>₱160.00</p>
+                <button class="add-to-cart" data-name="Upsize to 22oz" data-price="160">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Upgrade to Frappe or Cheesecake</h3>
+                <p>₱195.00</p>
+                <button class="add-to-cart" data-name="Upgrade to Frappe or Cheesecake" data-price="195">Add to Cart</button>
+            </div>
+
+            <p>Burger with Drinks</p>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Quarter Pounder and Drinks (16oz)</h3>
+                <p>₱170.00</p>
+                <button class="add-to-cart" data-name="Quarter Pounder and Drinks (16oz)" data-price="170">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Chicken Burger and Drinks (16oz)</h3>
+                <p>₱170.00</p>
+                <button class="add-to-cart" data-name="Chicken Burger and Drinks (16oz)" data-price="170">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Cheesy QPB and Drinks (16oz)</h3>
+                <p>₱190.00</p>
+                <button class="add-to-cart" data-name="Cheesy QPB and Drinks (16oz)" data-price="190">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Bacon QPB and Drinks (16oz)</h3>
+                <p>₱210.00</p>
+                <button class="add-to-cart" data-name="Bacon QPB and Drinks (16oz)" data-price="210">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Double Decker and Drinks (16oz)</h3>
+                <p>₱240.00</p>
+                <button class="add-to-cart" data-name="Double Decker and Drinks (16oz)" data-price="240">Add to Cart</button>
+            </div>
+
+            <p>Hungarian Sausage with Drinks</p>
+            <div class="item">
+                <img src="" alt="">
+                <h3>16oz Drinks (Milktea, Coffee, Lemonade)</h3>
+                <p>₱150.00</p>
+                <button class="add-to-cart" data-name="16oz Drinks(Milktea, Coffee, Lemonade)" data-price="150">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Upsize to 22oz</h3>
+                <p>₱160.00</p>
+                <button class="add-to-cart" data-name="Upsize to 22oz" data-price="160">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Upgrade to Frappe or Cheesecake</h3>
+                <p>₱195.00</p>
+                <button class="add-to-cart" data-name="Upgrade to Frappe or Cheesecake" data-price="195">Add to Cart</button>
+            </div>
+
+            <p>Wings Meal</p>
+            <div class="item">
+                <img src="" alt="">
+                <h3>2 pcs. Wings + Rice + Small Drink (16oz)</h3>
+                <p>₱160.00</p>
+                <button class="add-to-cart" data-name="2 pcs. Wings + Rice + Small Drink (16oz)" data-price="160">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>3 pcs. Wings + Rice + Small Drink (16oz)</h3>
+                <p>₱180.00</p>
+                <button class="add-to-cart" data-name="3 pcs. Wings + Rice + Small Drink (16oz)" data-price="180">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>4 pcs. Wings + Rice + Small Drink (16oz)</h3>
+                <p>₱200.00</p>
+                <button class="add-to-cart" data-name="4 pcs. Wings + Rice + Small Drink (16oz)" data-price="200">Add to Cart</button>
+            </div>
+
+            <p>Busolve Meal</p>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Any Pasta + 2 Chicken Wings</h3>
+                <p>₱145.00</p>
+                <button class="add-to-cart" data-name="Any Pasta + 2 Chicken Wings" data-price="145">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Any Pasta + 3 Chicken Wings</h3>
+                <p>₱165.00</p>
+                <button class="add-to-cart" data-name="Any Pasta + 3 Chicken Wings" data-price="165">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Any Pasta + 2 Wings + Small Drink (16oz)</h3>
+                <p>₱215.00</p>
+                <button class="add-to-cart" data-name="Any Pasta + 2 Wings + Small Drink (16oz)" data-price="215">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Any Pasta + 3 Wings + Small Drink (16oz)</h3>
+                <p>₱235.00</p>
+                <button class="add-to-cart" data-name="Any Pasta + 3 Wings + Small Drink (16oz)" data-price="235">Add to Cart</button>
+            </div>`;
 });
 
 chickenWings.addEventListener("click", function() {
