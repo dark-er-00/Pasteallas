@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pasteallas</title>
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    </head>
+<body>
+    <h1>Pasteallas</h1>
+    <div id="menu">
+        <div id="menu-categories">
+            <button id="RiceMeals">Rice Meals</button>
+            <button id="ComboMeals">Combo Meals</button>
+            <button id="ChickenWings">Chicken Wings</button>
+            <button id="Frappe">Frappe</button>
+            <button id="Burgers">Burgers</button>
+            <button id="Sausages">Sausages</button>
+            <button id="Pasta">Pasta</button>
+            <button id="CoffeeSeries">Coffee Series</button>
+            <button id="MoguSeries">Mogu Coolers</button>
+            <button id="YakultSeries">Yakult Series</button>
+            <button id="Snacks">Snacks</button>
+            <button id="Milktea">Milktea</button>
+        </div>
+        <div id="menu-items">
+            <p>Any Pasta with Drinks</p>
+            <div class="item">
+                <img src="" alt="">
+                <h3>16oz Drinks (Milktea, Coffee, Lemonade)</h3>
+                <p>₱150.00</p>
+                <button class="add-to-cart" data-name="16oz Drinks (Milktea, Coffee, Lemonade)" data-price="150">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Upsize to 22oz</h3>
+                <p>₱160.00</p>
+                <button class="add-to-cart" data-name="Upsize to 22oz" data-price="160">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Upgrade to Frappe or Cheesecake</h3>
+                <p>₱195.00</p>
+                <button class="add-to-cart" data-name="Upgrade to Frappe or Cheesecake" data-price="195">Add to Cart</button>
+            </div>
+
+            <p>Burger with Drinks</p>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Quarter Pounder and Drinks (16oz)</h3>
+                <p>₱170.00</p>
+                <button class="add-to-cart" data-name="Quarter Pounder and Drinks (16oz)" data-price="170">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Chicken Burger and Drinks (16oz)</h3>
+                <p>₱170.00</p>
+                <button class="add-to-cart" data-name="Chicken Burger and Drinks (16oz)" data-price="170">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <h3>Cheesy QPB and Drinks (16oz)</h3>
+                <p>₱190.00</p>
+                <button class="add-to-cart" data-name="Cheesy QPB and Drinks (16oz)" data-price="190">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="total">
+        <p>Total No. of Products: <span id="product-count"></span></p>
+        <p>Total Price: ₱<span id="total-price"></span></p>
+        <button id="checkout">Proceed to Checkout</button>
+    </div>
+
+    <script src="../js/menu.js"></script>
+</body>
+</html>
