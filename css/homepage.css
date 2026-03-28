@@ -33,6 +33,15 @@ header nav a {
     font-weight: bold;
 }
 
+header nav a:hover {
+    color: #894e3f;
+}
+
+.active {
+    color: #894e3f;
+    border-bottom: 2px solid #894e3f;
+}
+
 #hero-section {
     height: 85vh;
     display: flex;
